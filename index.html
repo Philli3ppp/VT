@@ -87,10 +87,9 @@
   <div class="wrap grid cols-2">
     <div class="panel pad">
       <h2 data-i18n="contact.title">Свяжитесь с нами</h2>
-      <p class="muted"><strong>E-mail:</strong> <a href="mailto:info@veldtech.com">info@veldtech.com</a></p>
+      <p class="muted"><strong>E-mail:</strong> <a href="mailto:info@veld.by">info@veld.by</a></p>
       <div class="actions">
         <a class="btn" href="https://wa.me/37533340000" target="_blank" rel="noopener">WhatsApp: +375 33 340-0000</a>
-        <a class="btn" href="https://t.me/octopussystems" target="_blank" rel="noopener">Telegram: @octopussystems</a>
       </div>
       <p class="muted" style="margin-top:12px">
         По запросу доступны спецификации оборудования и консультации по поставкам.
@@ -131,7 +130,7 @@
     const email = data.get('email').trim();
     const subject = data.get('subject').trim();
     const message = data.get('message').trim();
-    const to = 'info@veldtech.com';  // адрес для ЧП Вельд Техно
+    const to = 'info@veld.by';  // адрес для ЧП Вельд Техно
     const body = `Имя: ${name}%0AEmail: ${email}%0A%0A${message}`;
     const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${body}`;
     window.location.href = mailto;
