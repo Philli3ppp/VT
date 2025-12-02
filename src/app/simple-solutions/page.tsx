@@ -32,7 +32,7 @@ export default function SimpleSolutions() {
           { label: "Безопасность", href: "/security" },
         ]}
       />
-      <main className="container space-y-14 py-12">
+      <main className="container mt-10 space-y-14 py-12">
         <section className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
           <div className="space-y-4">
             <p className="text-xs uppercase tracking-[0.18em] text-[var(--accent-b)]">

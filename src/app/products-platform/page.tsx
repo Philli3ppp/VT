@@ -30,7 +30,7 @@ export default function ProductsPlatform() {
           { label: "Безопасность", href: "/security" },
         ]}
       />
-      <main className="container space-y-12 py-12">
+      <main className="container mt-10 space-y-12 py-12">
         <section className="space-y-4">
           <p className="text-xs uppercase tracking-[0.18em] text-[var(--accent-b)]">
             Products / Platform

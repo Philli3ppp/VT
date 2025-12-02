@@ -87,19 +87,24 @@ body {
 }
 
 .btn-contact {
-  border-color: var(--accent-a);
+  border-color: var(--border);
   color: var(--text-strong);
 }
 
 .btn-contact:hover {
-  background: var(--accent-a-weak);
-  border-color: var(--accent-a);
+  border-color: var(--text-muted);
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.02)
+    ),
+    rgba(255, 255, 255, 0.02);
 }
 
 .header-blur {
-  background: rgba(15, 23, 42, 0.7);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.78);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .cta-mask {

@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="container space-y-16 py-12">
+      <main className="container mt-10 space-y-16 py-12">
         <section className="grid gap-10 lg:grid-cols-[1.6fr_1fr]">
           <div className="space-y-5">
             <p className="text-xs uppercase tracking-[0.2em] text-[var(--accent-b)]">
