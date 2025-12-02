@@ -30,7 +30,7 @@ export function Header({
               <a
                 key={item.href}
                 href={item.href}
-                className={`pb-2 transition hover:text-[var(--text-strong)] ${
+                className={`pb-2 whitespace-nowrap shrink-0 transition hover:text-[var(--text-strong)] ${
                   isActive
                     ? "border-b-2 border-[var(--accent-b)] text-[var(--text-strong)]"
                     : "border-b-2 border-transparent"
