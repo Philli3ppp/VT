@@ -37,7 +37,7 @@ export default function Services() {
       />
       <main className="content-wrap container space-y-12 py-12">
         <section className="space-y-4">
-          <p className="text-xs uppercase tracking-[0.18em] text-[var(--accent-b)]">
+          <p className="text-xs uppercase tracking-[0.2em] text-[var(--accent-b)]">
             Услуги
           </p>
           <p className="text-[var(--text-muted)]">

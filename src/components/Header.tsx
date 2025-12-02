@@ -1,5 +1,7 @@
 "use client";
 
+import { navItems as defaultNav } from "@/content/navItems";
+
 type NavItem = { label: string; href: string };
 
 type HeaderProps = {
@@ -8,13 +10,6 @@ type HeaderProps = {
   ctaPrimaryText?: string;
   ctaSecondaryText?: string;
 };
-
-const defaultNav: NavItem[] = [
-  { label: "Решения", href: "/#solutions" },
-  { label: "Продукты", href: "/#products" },
-  { label: "Услуги", href: "/#services" },
-  { label: "Безопасность", href: "/#security" },
-];
 
 export function Header({
   langToggle = true,

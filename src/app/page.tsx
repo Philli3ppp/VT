@@ -68,15 +68,10 @@ export default function Home() {
           <div className="card border border-[var(--border)] p-6">
             <h3 className="text-xl font-semibold">IoT → AI</h3>
             <p className="mt-3 text-[var(--text-muted)]">
-              Внедрение ИИ невозможно без инфраструктуры сбора данных. IoT даёт
-              датчики, каналы связи и инструменты, через которые ИИ видит
+              Внедрение ИИ невозможно без инфраструктуры сбора данных. IoT 
+              каналы связи и инструменты, через которые ИИ видит
               процессы и может управлять ими.
             </p>
-            <ul className="mt-4 space-y-2 text-[var(--text-muted)]">
-              <li>• Датчики: вибрация, температура, давление, энергия</li>
-              <li>• Каналы: RS485/Modbus/4–20mA/0–10V, MQTT, OPC-UA</li>
-              <li>• Управление: правила, алерты, OTA, API/ERP/SCADA/MES</li>
-            </ul>
           </div>
         </section>
 
@@ -157,7 +152,7 @@ export default function Home() {
         </div>
       </main>
       <div className="footer-note">
-        ЧП «Вельд Техно» — промышленный IoT
+        ЧП «Вельд Техно» — промышленный IoT Veld tech PE 
       </div>
     </>
   );
