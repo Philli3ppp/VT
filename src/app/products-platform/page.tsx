@@ -78,6 +78,9 @@ export default function ProductsPlatform() {
           secondaryText="Связаться"
         />
       </main>
+      <div className="footer-note">
+        ЧП «Вельд Техно» — промышленный IoT
+      </div>
     </>
   );
 }

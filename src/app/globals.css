@@ -130,3 +130,11 @@ body {
 .content-wrap {
   margin-top: 40px;
 }
+
+.footer-note {
+  margin-top: 40px;
+  padding-bottom: 24px;
+  color: var(--text-muted);
+  font-size: 12px;
+  text-align: center;
+}

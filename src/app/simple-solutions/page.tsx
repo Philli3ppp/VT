@@ -105,6 +105,9 @@ export default function SimpleSolutions() {
           secondaryText="Запросить демо"
         />
       </main>
+      <div className="footer-note">
+        ЧП «Вельд Техно» — промышленный IoT
+      </div>
     </>
   );
 }

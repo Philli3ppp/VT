@@ -156,6 +156,9 @@ export default function Home() {
           />
         </div>
       </main>
+      <div className="footer-note">
+        ЧП «Вельд Техно» — промышленный IoT
+      </div>
     </>
   );
 }

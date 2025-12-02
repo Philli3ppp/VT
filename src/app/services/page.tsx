@@ -81,6 +81,9 @@ export default function Services() {
           secondaryText="Оценить проект"
         />
       </main>
+      <div className="footer-note">
+        ЧП «Вельд Техно» — промышленный IoT
+      </div>
     </>
   );
 }

@@ -115,6 +115,9 @@ export default function SecurityPage() {
           secondaryText="Связаться"
         />
       </main>
+      <div className="footer-note">
+        ЧП «Вельд Техно» — промышленный IoT
+      </div>
     </>
   );
 }
