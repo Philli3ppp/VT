@@ -1,31 +1,41 @@
 "use client";
 
 import { useState } from "react";
-import { processSteps, Step } from "@/content/processSteps";
+import { processSteps } from "@/content/processSteps";
 
 export function ProcessSteps() {
-  const [active, setActive] = useState<Step>(processSteps[0]);
+  const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <div className="space-y-4">
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {processSteps.map((step) => (
-          <button
-            key={step.title}
-            onMouseEnter={() => setActive(step)}
-            onFocus={() => setActive(step)}
-            onClick={() => setActive(step)}
-            className="card text-left border border-[var(--border)] bg-[#0f131f] p-4 transition-all duration-150 hover:-translate-y-1 hover:border-[var(--accent-a)] hover:shadow-[0_12px_26px_rgba(34,197,94,0.22)]"
-          >
-            <p className="text-sm text-[var(--text-muted)]"></p>
-            <p className="mt-1 text-lg font-semibold leading-snug">
-              {step.title}
-            </p>
-          </button>
-        ))}
-      </div>
-      <div className="card border border-[var(--border)] bg-[#0f131f] p-5 text-[var(--text-muted)]">
-        {active.detail}
+    <div className="space-y-2">
+      <div className="card border border-[var(--border)] bg-[#0f131f] divide-y divide-[var(--border)]">
+        {processSteps.map((step, idx) => {
+          const isOpen = idx === openIndex;
+          return (
+            <div key={step.title} className="p-4">
+              <button
+                className="flex w-full items-center justify-between text-left"
+                onClick={() => setOpenIndex(isOpen ? -1 : idx)}
+              >
+                <span className="text-base font-semibold text-[var(--text-strong)]">
+                  {step.title}
+                </span>
+                <span
+                  className={`transition-transform ${
+                    isOpen ? "rotate-90" : "rotate-0"
+                  }`}
+                >
+                  ▶
+                </span>
+              </button>
+              {isOpen && (
+                <p className="mt-2 text-[var(--text-muted)] text-sm leading-relaxed">
+                  {step.detail}
+                </p>
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
