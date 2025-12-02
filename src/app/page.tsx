@@ -73,7 +73,7 @@ export default function Home() {
               датчики, каналы связи и инструменты, через которые ИИ видит
               процессы и может управлять ими.
             </p>
-            <div className="mt-4 flex justify-center">
+            <div className="mt-5 flex justify-center">
               <Image
                 src="/sensor-to-db.svg"
                 alt="Поток от датчика к базе данных"
