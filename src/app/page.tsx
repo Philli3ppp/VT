@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { Header } from "@/components/Header";
 import { CtaBlock } from "@/components/CtaBlock";
+import { AiImpact } from "@/components/AiImpact";
 
 const industries = [
   {
@@ -42,8 +43,8 @@ export default function Home() {
               Повышаем эффективность вашего производства
             </h1>
             <p className="text-lg text-[var(--text-muted)]">
-              IoT-мониторинг, аналитика и автоматизация. Локально или в облаке,
-              с возможностью передачи прав на систему по договорённости.
+              IoT-мониторинг, аналитика и автоматизация. Локально или в облаке.
+              Индивидуальные дашборды и интеграции с существующими системами.
             </p>
             <div className="flex flex-wrap gap-3">
               <button className="btn btn-primary">Запросить демо</button>
@@ -73,7 +74,7 @@ export default function Home() {
               IoT дает каналы связи и инструменты, через которые ИИ видит процессы и может
               управлять ими.
             </p>
-            <div className="mt-5 flex justify-center">
+            <div className="mt-13 flex justify-center">
               <Image
                 src="/sensor-to-db.svg"
                 alt="Поток от датчика к базе данных"
@@ -85,12 +86,11 @@ export default function Home() {
           </div>
         </section>
 
+        <AiImpact />
+
         <section className="space-y-6" id="process">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-semibold">Процесс: от анализа до поддержки</h2>
-            <span className="text-sm text-[var(--text-muted)]">
-              6 этапов, интерактивные детали
-            </span>
           </div>
           <ProcessSteps />
         </section>
@@ -162,7 +162,7 @@ export default function Home() {
         </div>
       </main>
       <div className="footer-note">
-        ЧП «Вельд Техно» — промышленный IoT Veld tech PE 
+        ЧП «Вельд Техно» — промышленный IoT. Veld tech. PE - industrial IOT. 
       </div>
     </>
   );
