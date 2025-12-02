@@ -40,7 +40,6 @@ export default function Services() {
           <p className="text-xs uppercase tracking-[0.18em] text-[var(--accent-b)]">
             Услуги
           </p>
-          <h1 className="text-4xl font-semibold leading-tight">Услуги</h1>
           <p className="text-[var(--text-muted)]">
             Полный цикл: от обследования и прототипа до внедрения, обучения и
             поддержки. Заказчик может выбрать self-service или сервисный
