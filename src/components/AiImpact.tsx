@@ -86,8 +86,6 @@ export function AiImpact() {
               className={`card border border-[var(--border)] bg-[#0f131f] transition ${
                 isOpen ? "shadow-[0_12px_26px_rgba(107,157,255,0.18)]" : ""
               }`}
-              onMouseEnter={() => setOpen(item.key)}
-              onMouseLeave={() => setOpen(null)}
               onClick={() => setOpen(isOpen ? null : item.key)}
             >
               <div className="flex items-center justify-between p-4">
