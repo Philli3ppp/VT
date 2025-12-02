@@ -116,10 +116,10 @@ export default function SolutionsByIndustry() {
           { label: "Безопасность", href: "/security" },
         ]}
       />
-      <main className="container mt-10 space-y-12 py-12">
+      <main className="content-wrap container space-y-12 py-12">
         <section className="space-y-4">
           <p className="text-xs uppercase tracking-[0.18em] text-[var(--accent-b)]">
-            Solutions by industry
+            Отраслевые решения
           </p>
           <h1 className="text-4xl font-semibold leading-tight">
             Отраслевые решения
@@ -144,7 +144,7 @@ export default function SolutionsByIndustry() {
                 ))}
               </ul>
               <button className="mt-3 text-sm font-semibold text-[var(--accent-b)]">
-                Discuss your industry →
+                Обсудить отрасль →
               </button>
             </div>
           ))}
@@ -154,8 +154,8 @@ export default function SolutionsByIndustry() {
           eyebrow="CTA"
           title="Обсудить вашу отрасль"
           subtitle="Подберём пилот под ваш объект, подключим 1–3 зоны, покажем эффект."
-          primaryText="Request a demo"
-          secondaryText="Contact"
+          primaryText="Запросить демо"
+          secondaryText="Связаться"
         />
       </main>
     </>

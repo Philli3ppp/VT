@@ -13,10 +13,10 @@ export default function ContactsPage() {
           { label: "Услуги", href: "/services" },
         ]}
       />
-      <main className="container mt-10 space-y-12 py-12">
+      <main className="content-wrap container space-y-12 py-12">
         <section className="space-y-4">
           <p className="text-xs uppercase tracking-[0.18em] text-[var(--accent-b)]">
-            Contacts
+            Контакты
           </p>
           <h1 className="text-4xl font-semibold leading-tight">Контакты</h1>
           <p className="text-[var(--text-muted)]">
@@ -58,10 +58,10 @@ export default function ContactsPage() {
               </label>
               <div className="flex flex-wrap gap-3 pt-2">
                 <button type="submit" className="btn btn-primary">
-                  Request a demo
+                  Запросить демо
                 </button>
                 <button type="button" className="btn btn-secondary btn-contact">
-                  Contact
+                  Связаться
                 </button>
               </div>
             </form>
@@ -87,8 +87,8 @@ export default function ContactsPage() {
           eyebrow="CTA"
           title="Связаться или запросить демо"
           subtitle="Отвечаем в течение 1 рабочего дня. Контакты защищены от ботов."
-          primaryText="Request a demo"
-          secondaryText="Contact"
+          primaryText="Запросить демо"
+          secondaryText="Связаться"
         />
       </main>
     </>

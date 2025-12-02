@@ -67,13 +67,13 @@ export default function SecurityPage() {
           { label: "Услуги", href: "/services" },
         ]}
       />
-      <main className="container mt-10 space-y-12 py-12">
+      <main className="content-wrap container space-y-12 py-12">
         <section className="space-y-4">
           <p className="text-xs uppercase tracking-[0.18em] text-[var(--accent-b)]">
-            Security
+            Безопасность
           </p>
           <h1 className="text-4xl font-semibold leading-tight">
-            Безопасность / Security
+            Безопасность
           </h1>
           <p className="text-[var(--text-muted)]">
             Защищаем данные и инфраструктуру: шифрование, сегментация, OTA с
@@ -111,8 +111,8 @@ export default function SecurityPage() {
           eyebrow="CTA"
           title="Запросить политику безопасности"
           subtitle="Политики, настройки сегментации, криптография, OTA и аудит."
-          primaryText="Request security brief"
-          secondaryText="Contact"
+          primaryText="Запросить политику"
+          secondaryText="Связаться"
         />
       </main>
     </>

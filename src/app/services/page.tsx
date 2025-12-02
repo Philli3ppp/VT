@@ -34,10 +34,10 @@ export default function Services() {
           { label: "Безопасность", href: "/security" },
         ]}
       />
-      <main className="container mt-10 space-y-12 py-12">
+      <main className="content-wrap container space-y-12 py-12">
         <section className="space-y-4">
           <p className="text-xs uppercase tracking-[0.18em] text-[var(--accent-b)]">
-            Services
+            Услуги
           </p>
           <h1 className="text-4xl font-semibold leading-tight">Услуги</h1>
           <p className="text-[var(--text-muted)]">
@@ -77,8 +77,8 @@ export default function Services() {
           eyebrow="CTA"
           title="Запросить план работ"
           subtitle="Оценим объём, предложим пилот и полное внедрение. Локально или в облаке."
-          primaryText="Request a plan"
-          secondaryText="Estimate project"
+          primaryText="Запросить план"
+          secondaryText="Оценить проект"
         />
       </main>
     </>

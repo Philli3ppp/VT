@@ -126,3 +126,7 @@ body {
   position: relative;
   z-index: 1;
 }
+
+.content-wrap {
+  margin-top: 40px;
+}

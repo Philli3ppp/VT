@@ -30,10 +30,10 @@ export default function ProductsPlatform() {
           { label: "Безопасность", href: "/security" },
         ]}
       />
-      <main className="container mt-10 space-y-12 py-12">
+      <main className="content-wrap container space-y-12 py-12">
         <section className="space-y-4">
           <p className="text-xs uppercase tracking-[0.18em] text-[var(--accent-b)]">
-            Products / Platform
+            Платформа
           </p>
           <h1 className="text-4xl font-semibold leading-tight">Платформа VT</h1>
           <p className="text-[var(--text-muted)]">
@@ -41,8 +41,8 @@ export default function ProductsPlatform() {
             систему/исходники могут переходить заказчику по договорённости.
           </p>
           <div className="flex flex-wrap gap-3">
-            <button className="btn btn-primary">Request a demo</button>
-            <button className="btn btn-secondary btn-contact">Contact</button>
+            <button className="btn btn-primary">Запросить демо</button>
+            <button className="btn btn-secondary btn-contact">Связаться</button>
           </div>
         </section>
 
@@ -74,8 +74,8 @@ export default function ProductsPlatform() {
           eyebrow="CTA"
           title="Запросить демо платформы"
           subtitle="Покажем сбор данных, дашборды и автоматизацию. Локальный или облачный режим."
-          primaryText="Request a demo"
-          secondaryText="Contact"
+          primaryText="Запросить демо"
+          secondaryText="Связаться"
         />
       </main>
     </>

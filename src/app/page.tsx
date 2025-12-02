@@ -31,23 +31,22 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="container mt-10 space-y-16 py-12">
+      <main className="content-wrap container space-y-16 py-12">
         <section className="grid gap-10 lg:grid-cols-[1.6fr_1fr]">
           <div className="space-y-5">
             <p className="text-xs uppercase tracking-[0.2em] text-[var(--accent-b)]">
-              Industrial IoT
+              Промышленный IoT
             </p>
             <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">
-              Improve efficiency of your facility
+              Повышаем эффективность вашего производства
             </h1>
             <p className="text-lg text-[var(--text-muted)]">
-              Повышаем эффективность вашего производства через IoT-мониторинг,
-              аналитику и автоматизацию. Локально или в облаке, с передачей прав
-              на систему по договорённости.
+              IoT-мониторинг, аналитика и автоматизация. Локально или в облаке,
+              с возможностью передачи прав на систему по договорённости.
             </p>
             <div className="flex flex-wrap gap-3">
-              <button className="btn btn-primary">Request a demo</button>
-              <button className="btn btn-secondary btn-contact">Contact</button>
+              <button className="btn btn-primary">Запросить демо</button>
+              <button className="btn btn-secondary btn-contact">Связаться</button>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
               <div className="card border border-[var(--border)] p-4">
@@ -129,8 +128,8 @@ export default function Home() {
               <li>• Интеграции: ERP/SCADA/MES, API, OTA с подписью и откатом</li>
             </ul>
             <div className="mt-4 flex flex-wrap gap-3">
-              <button className="btn btn-primary">Request a demo</button>
-              <button className="btn btn-secondary btn-contact">Contact</button>
+              <button className="btn btn-primary">Запросить демо</button>
+              <button className="btn btn-secondary btn-contact">Связаться</button>
             </div>
           </div>
           <div className="card border border-[var(--border)] p-6">
@@ -152,6 +151,8 @@ export default function Home() {
             eyebrow="CTA"
             title="Запустим пилот за 30 дней"
             subtitle="Минимум датчиков, ясные уведомления, безопасное подключение."
+            primaryText="Запросить демо"
+            secondaryText="Связаться"
           />
         </div>
       </main>

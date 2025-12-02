@@ -32,14 +32,14 @@ export default function SimpleSolutions() {
           { label: "Безопасность", href: "/security" },
         ]}
       />
-      <main className="container mt-10 space-y-14 py-12">
+      <main className="content-wrap container space-y-14 py-12">
         <section className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
           <div className="space-y-4">
             <p className="text-xs uppercase tracking-[0.18em] text-[var(--accent-b)]">
-              Simple solutions
+              Простые решения
             </p>
             <h1 className="text-4xl font-semibold leading-tight">
-              Простые решения: 1 датчик → 1 уведомление
+              1 датчик → 1 уведомление
             </h1>
             <p className="text-[var(--text-muted)]">
               Быстрый старт IoT за 1 день (при наличии компонентов). Чёткие
@@ -47,9 +47,9 @@ export default function SimpleSolutions() {
               расширять до полной платформы.
             </p>
             <div className="flex flex-wrap gap-3">
-              <button className="btn btn-primary">Get pricing</button>
+              <button className="btn btn-primary">Узнать стоимость</button>
               <button className="btn btn-secondary btn-contact">
-                Request a demo
+                Запросить демо
               </button>
             </div>
           </div>
@@ -101,8 +101,8 @@ export default function SimpleSolutions() {
           eyebrow="CTA"
           title="Узнать стоимость пилота"
           subtitle="1–3 датчика, уведомления в Telegram, запуск за 1 день при наличии компонентов."
-          primaryText="Get pricing"
-          secondaryText="Request a demo"
+          primaryText="Узнать стоимость"
+          secondaryText="Запросить демо"
         />
       </main>
     </>
