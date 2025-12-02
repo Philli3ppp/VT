@@ -8,6 +8,7 @@ type ImpactItem = {
   key: ImpactKey;
   title: string;
   savings: string;
+  savingsShare: string;
   before: string[];
   after: string[];
 };
@@ -16,16 +17,17 @@ const impacts: ImpactItem[] = [
   {
     key: "cv",
     title: "Компьютерное зрение",
-    savings: "$63k/год",
+    savings: "$153k/год",
+    savingsShare: "3.06% от $5M",
     before: [
       "Невыявленные дефекты: 5%",
-      "Брак: 3.2%",
+      "Брак: 3.2% (скрап $160k)",
       "QC скорость: 350 ед/мин",
       "Трудозатраты QC: $70k/год",
     ],
     after: [
       "Невыявленные дефекты: 0.4%",
-      "Брак: 0.7%",
+      "Брак: 0.7% (скрап $35k)",
       "QC скорость: 8000 ед/мин",
       "Трудозатраты QC: $42k/год",
     ],
@@ -33,16 +35,17 @@ const impacts: ImpactItem[] = [
   {
     key: "ml",
     title: "ML оптимизация процессов",
-    savings: "$96k/год",
+    savings: "$436k/год",
+    savingsShare: "8.72% от $5M",
     before: [
       "Вариативность процесса: 12%",
-      "Перерасход сырья: 10%",
+      "Перерасход сырья: 10% (потери $500k)",
       "Энергия: $300k/год",
       "Лишние простои: 12 ч/мес",
     ],
     after: [
       "Вариативность процесса: 8%",
-      "Перерасход сырья: 2%",
+      "Перерасход сырья: 2% (потери $100k)",
       "Энергия: $264k/год",
       "Лишние простои: 5 ч/мес",
     ],
@@ -50,15 +53,16 @@ const impacts: ImpactItem[] = [
   {
     key: "pm",
     title: "Предиктивное обслуживание",
-    savings: "$165k/год",
+    savings: "$261k/год",
+    savingsShare: "5.22% от $5M",
     before: [
-      "Неплан. простои: 15 ч/мес",
+      "Неплан. простои: 15 ч/мес ($270k/год)",
       "Стоимость часа простоя: $1500",
       "ТО: $90k/год",
       "Срок службы: 8 лет",
     ],
     after: [
-      "Неплан. простои: 3 ч/мес",
+      "Неплан. простои: 3 ч/мес ($54k/год)",
       "Стоимость часа простоя: $1500",
       "ТО: $45k/год",
       "Срок службы: 10 лет",
@@ -72,10 +76,16 @@ export function AiImpact() {
   return (
     <section className="space-y-3">
       <div className="flex items-center justify-between">
-        <h2 className="text-2xl font-semibold">AI-эффект</h2>
-        <span className="text-sm text-[var(--text-muted)]">
-          Нажмите, чтобы раскрыть детали
-        </span>
+        <div>
+          <h2 className="text-2xl font-semibold">AI-эффект</h2>
+          <p className="text-sm text-[var(--text-muted)]">
+            Объём выпуска: $5M/год. Нажмите, чтобы раскрыть детали.
+          </p>
+        </div>
+        <div className="text-sm text-[var(--text-muted)] text-right">
+          <div>Суммарная экономия: $850k/год (17%)</div>
+          <div>Стоимость интеграции AI: $120k, ROI ~1.7 мес</div>
+        </div>
       </div>
       <div className="grid gap-3 lg:grid-cols-3">
         {impacts.map((item) => {
@@ -86,15 +96,20 @@ export function AiImpact() {
               className={`card border border-[var(--border)] bg-[#0f131f] transition ${
                 isOpen ? "shadow-[0_12px_26px_rgba(107,157,255,0.18)]" : ""
               }`}
-              onClick={() => setOpen(isOpen ? null : item.key)}
             >
-              <div className="flex items-center justify-between p-4">
+              <button
+                className="flex w-full items-center justify-between p-4 text-left"
+                onClick={() => setOpen(isOpen ? null : item.key)}
+              >
                 <div>
                   <p className="text-sm text-[var(--text-muted)]">
                     {item.title}
                   </p>
                   <p className="text-lg font-semibold text-[var(--text-strong)]">
                     Экономия: {item.savings}
+                  </p>
+                  <p className="text-xs text-[var(--text-muted)]">
+                    {item.savingsShare}
                   </p>
                 </div>
                 <span
@@ -104,7 +119,7 @@ export function AiImpact() {
                 >
                   ▶
                 </span>
-              </div>
+              </button>
               {isOpen && (
                 <div className="grid grid-cols-2 gap-3 border-t border-[var(--border)] p-4 text-sm text-[var(--text-muted)]">
                   <div>
