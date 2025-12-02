@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { Header } from "@/components/Header";
 import { CtaBlock } from "@/components/CtaBlock";
@@ -68,10 +69,19 @@ export default function Home() {
           <div className="card border border-[var(--border)] p-6">
             <h3 className="text-xl font-semibold">IoT → AI</h3>
             <p className="mt-3 text-[var(--text-muted)]">
-              Внедрение ИИ невозможно без инфраструктуры сбора данных. IoT 
-              каналы связи и инструменты, через которые ИИ видит
+              Внедрение ИИ невозможно без инфраструктуры сбора данных. IoT дает
+              датчики, каналы связи и инструменты, через которые ИИ видит
               процессы и может управлять ими.
             </p>
+            <div className="mt-4 flex justify-center">
+              <Image
+                src="/sensor-to-db.svg"
+                alt="Поток от датчика к базе данных"
+                width={420}
+                height={220}
+                priority
+              />
+            </div>
           </div>
         </section>
 
