@@ -69,9 +69,9 @@ export default function Home() {
           <div className="card border border-[var(--border)] p-6">
             <h3 className="text-xl font-semibold">IoT → AI</h3>
             <p className="mt-3 text-[var(--text-muted)]">
-              Внедрение ИИ невозможно без инфраструктуры сбора данных. IoT дает
-              датчики, каналы связи и инструменты, через которые ИИ видит
-              процессы и может управлять ими.
+              Внедрение ИИ в производственный процесс невозможно без инфраструктуры сбора данных. 
+              IoT дает каналы связи и инструменты, через которые ИИ видит процессы и может
+              управлять ими.
             </p>
             <div className="mt-5 flex justify-center">
               <Image
