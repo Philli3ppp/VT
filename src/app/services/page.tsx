@@ -26,15 +26,7 @@ const steps = [
 export default function Services() {
   return (
     <>
-      <Header
-        navItems={[
-          { label: "Главная", href: "/" },
-          { label: "Простые решения", href: "/simple-solutions" },
-          { label: "Отрасли", href: "/solutions-by-industry" },
-          { label: "Продукты", href: "/products-platform" },
-          { label: "Безопасность", href: "/security" },
-        ]}
-      />
+      <Header />
       <main className="content-wrap container space-y-12 py-12">
         <section className="space-y-4">
           <p className="text-xs uppercase tracking-[0.2em] text-[var(--accent-b)]">

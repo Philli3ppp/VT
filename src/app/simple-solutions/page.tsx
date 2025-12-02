@@ -23,15 +23,7 @@ const steps = [
 export default function SimpleSolutions() {
   return (
     <>
-      <Header
-        navItems={[
-          { label: "Главная", href: "/" },
-          { label: "Отрасли", href: "/solutions-by-industry" },
-          { label: "Продукты", href: "/products-platform" },
-          { label: "Услуги", href: "/services" },
-          { label: "Безопасность", href: "/security" },
-        ]}
-      />
+      <Header />
       <main className="content-wrap container space-y-14 py-12">
         <section className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
           <div className="space-y-4">

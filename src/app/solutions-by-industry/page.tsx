@@ -107,23 +107,12 @@ const industries = [
 export default function SolutionsByIndustry() {
   return (
     <>
-      <Header
-        navItems={[
-          { label: "Главная", href: "/" },
-          { label: "Простые решения", href: "/simple-solutions" },
-          { label: "Продукты", href: "/products-platform" },
-          { label: "Услуги", href: "/services" },
-          { label: "Безопасность", href: "/security" },
-        ]}
-      />
+      <Header />
       <main className="content-wrap container space-y-12 py-12">
         <section className="space-y-4">
           <p className="text-xs uppercase tracking-[0.18em] text-[var(--accent-b)]">
             Отраслевые решения
           </p>
-          <h1 className="text-4xl font-semibold leading-tight">
-            Отраслевые решения
-          </h1>
           <p className="text-[var(--text-muted)]">
             Для каждой отрасли: проблема → решение (датчики/аналитика/интеграции)
             → эффект в цифрах. Локально или в облаке, данные принадлежат

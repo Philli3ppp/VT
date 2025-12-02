@@ -4,15 +4,7 @@ import { CtaBlock } from "@/components/CtaBlock";
 export default function ContactsPage() {
   return (
     <>
-      <Header
-        navItems={[
-          { label: "Главная", href: "/" },
-          { label: "Простые решения", href: "/simple-solutions" },
-          { label: "Отрасли", href: "/solutions-by-industry" },
-          { label: "Продукты", href: "/products-platform" },
-          { label: "Услуги", href: "/services" },
-        ]}
-      />
+      <Header />
       <main className="content-wrap container space-y-12 py-12">
         <section className="space-y-4">
           <p className="text-xs uppercase tracking-[0.18em] text-[var(--accent-b)]">
