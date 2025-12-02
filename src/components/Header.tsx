@@ -43,12 +43,11 @@ export function Header({
         </nav>
         <div className="flex items-center gap-2">
           {langToggle && (
-            <button className="btn btn-secondary btn-contact hidden sm:inline-flex">
+            <button className="btn btn-header hidden sm:inline-flex">
               RU / EN
             </button>
           )}
-          <button className="btn btn-secondary btn-contact">Contact</button>
-          <button className="btn btn-primary">{ctaPrimaryText}</button>
+          <button className="btn btn-header">{ctaPrimaryText}</button>
         </div>
       </div>
     </header>
