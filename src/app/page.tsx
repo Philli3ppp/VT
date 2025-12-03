@@ -95,6 +95,31 @@ export default function Home() {
           <ProcessSteps />
         </section>
 
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold">Варианты логотипа (тест)</h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { src: "/VTsign2.svg", alt: "VT Sign 2" },
+              { src: "/VTsign.svg", alt: "VT Sign" },
+              { src: "/logovtcolorW.png", alt: "VT Color" },
+              { src: "/VT logo3.svg", alt: "VT Logo 3" },
+            ].map((logo) => (
+              <div
+                key={logo.src}
+                className="card flex items-center justify-center border border-[var(--border)] bg-[#0f131f] p-4"
+              >
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={180}
+                  height={80}
+                  className="h-auto max-h-20 w-auto"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+
         <section className="space-y-4" id="solutions">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-semibold">Отраслевые решения</h2>
