@@ -1,6 +1,7 @@
 "use client";
 
 import { navItems as defaultNav } from "@/content/navItems";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 type NavItem = { label: string; href: string };
@@ -22,7 +23,10 @@ export function Header({
   return (
     <header className="header-blur sticky top-0 z-10">
       <div className="container flex items-center justify-between py-3 md:py-2">
-        <div className="text-lg font-semibold tracking-[0.14em]">VT</div>
+        <div className="flex items-center gap-2">
+          <Image src="/VT.png" alt="VT logo" width={32} height={32} />
+          <div className="text-lg font-semibold tracking-[0.14em]">VT</div>
+        </div>
         <nav className="hidden items-center gap-6 text-sm text-[var(--text-muted)] md:flex">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
