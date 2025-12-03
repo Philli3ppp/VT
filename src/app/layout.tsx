@@ -11,6 +11,15 @@ export const metadata: Metadata = {
   title: "VT — Industrial IoT",
   description:
     "IoT решения для промышленности: мониторинг, аналитика, автоматизация. Локально или в облаке.",
+  icons: {
+    icon: [
+      { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon/favicon.ico" },
+    ],
+    apple: "/favicon/apple-touch-icon.png",
+  },
+  manifest: "/favicon/site.webmanifest",
 };
 
 export default function RootLayout({
