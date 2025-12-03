@@ -87,7 +87,7 @@ export function AiImpact() {
           <div>Стоимость интеграции AI: $120k, ROI ~1.7 мес</div>
         </div>
       </div>
-      <div className="grid gap-3 lg:grid-cols-3">
+      <div className="grid gap-3 lg:grid-cols-3 items-start">
         {impacts.map((item) => {
           const isOpen = open === item.key;
           return (
