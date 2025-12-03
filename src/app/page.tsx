@@ -4,25 +4,6 @@ import { Header } from "@/components/Header";
 import { CtaBlock } from "@/components/CtaBlock";
 import { AiImpact } from "@/components/AiImpact";
 
-const industries = [
-  {
-    title: "Металлургия",
-    text: "Вибродиагностика, энергомониторинг, контроль температур печей и газовый контроль CO.",
-  },
-  {
-    title: "Пищевая",
-    text: "Температура/влажность камер, CO₂ в брожении, трекинг сырья, расход воды/пара/газа.",
-  },
-  {
-    title: "Логистика и склады",
-    text: "RFID/QR паллет, контроль дверей, температура зон, пожарный мониторинг.",
-  },
-  {
-    title: "Энергетика",
-    text: "Давление/температура, вибро насосов/компрессоров, утечки газа, эффективность теплообменников.",
-  },
-];
-
 const benefits = [
   "Снижение простоев и предсказуемый сервис",
   "Интеграция с ERP/SCADA/MES без ломки процессов",
@@ -96,25 +77,18 @@ export default function Home() {
         </section>
 
         <section className="space-y-4" id="solutions">
-          <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-semibold">Отраслевые решения</h2>
-            <a className="text-sm text-[var(--accent-b)]" href="#contact">
-              Обсудить вашу отрасль →
-            </a>
-          </div>
-          <div className="grid gap-4 md:grid-cols-2">
-            {industries.map((item) => (
-              <div
-                key={item.title}
-                className="card border border-[var(--border)] p-5 transition duration-150 hover:-translate-y-1 hover:border-[var(--accent-b)]"
-              >
-                <h3 className="text-lg font-semibold">{item.title}</h3>
-                <p className="mt-2 text-[var(--text-muted)]">{item.text}</p>
-                <button className="mt-3 text-sm font-semibold text-[var(--accent-b)]">
-                  Learn more
-                </button>
-              </div>
-            ))}
+          <h2 className="text-2xl font-semibold">
+            Шаги внедрения AI в производстве
+          </h2>
+          <div className="card border border-[var(--border)] bg-[#0f131f] p-5 text-[var(--text-muted)] space-y-2">
+            <p>1) Установка сенсоров и исполнительных устройств (разработка новых, интеграция существующих).</p>
+            <p>2) Сбор и хранение данных (телеметрия, события, фото/видео).</p>
+            <p>3) Выбор технологии ML: CV (визуальный контроль), акустика, predictive maintenance, аномалии, прогноз, NLP для журналов.</p>
+            <p>4) Создание интерфейса: дашборды, алерты, API, интеграции.</p>
+            <p>5) Обучение модели: подготовка данных, разметка, тренировка, тесты.</p>
+            <p>6) Интеграция: развёртывание модели, подключение к правилам управления.</p>
+            <p>7) Использование: мониторинг метрик качества/скорости/брака, сценарии автоматизации.</p>
+            <p>8) Обслуживание: обновления моделей/ПО, контроль дрифта, поддержка оборудования.</p>
           </div>
         </section>
 

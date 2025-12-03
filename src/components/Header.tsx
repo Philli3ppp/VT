@@ -30,9 +30,6 @@ export function Header({
           onClick={() => setMenuOpen((prev) => !prev)}
         >
           <Image src="/VT.png" alt="VT logo" width={32} height={32} />
-          <span className="hidden md:inline text-lg font-semibold tracking-[0.14em]">
-            VT — Industrial IoT
-          </span>
         </button>
         <nav className="hidden items-center gap-6 text-sm text-[var(--text-muted)] md:flex">
           {navItems.map((item) => {

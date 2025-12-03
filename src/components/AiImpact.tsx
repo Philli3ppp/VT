@@ -122,25 +122,21 @@ export function AiImpact() {
               </button>
               {isOpen && (
                 <div className="grid grid-cols-2 gap-3 border-t border-[var(--border)] p-4 text-sm text-[var(--text-muted)]">
-                  <div>
+                  <div className="space-y-1">
                     <p className="font-semibold text-[var(--text-strong)]">
                       До
                     </p>
-                    <ul className="mt-2 space-y-1">
-                      {item.before.map((line) => (
-                        <li key={line}>• {line}</li>
-                      ))}
-                    </ul>
+                    {item.before.map((line) => (
+                      <p key={line}>{line}</p>
+                    ))}
                   </div>
-                  <div>
+                  <div className="space-y-1">
                     <p className="font-semibold text-[var(--text-strong)]">
                       После
                     </p>
-                    <ul className="mt-2 space-y-1">
-                      {item.after.map((line) => (
-                        <li key={line}>• {line}</li>
-                      ))}
-                    </ul>
+                    {item.after.map((line) => (
+                      <p key={line}>{line}</p>
+                    ))}
                   </div>
                 </div>
               )}
