@@ -76,22 +76,6 @@ export default function Home() {
           <ProcessSteps />
         </section>
 
-        <section className="space-y-4" id="solutions">
-          <h2 className="text-2xl font-semibold">
-            Шаги внедрения AI в производстве
-          </h2>
-          <div className="card border border-[var(--border)] bg-[#0f131f] p-5 text-[var(--text-muted)] space-y-2">
-            <p>1) Установка сенсоров и исполнительных устройств (разработка новых, интеграция существующих).</p>
-            <p>2) Сбор и хранение данных (телеметрия, события, фото/видео).</p>
-            <p>3) Выбор технологии ML: CV (визуальный контроль), акустика, predictive maintenance, аномалии, прогноз, NLP для журналов.</p>
-            <p>4) Создание интерфейса: дашборды, алерты, API, интеграции.</p>
-            <p>5) Обучение модели: подготовка данных, разметка, тренировка, тесты.</p>
-            <p>6) Интеграция: развёртывание модели, подключение к правилам управления.</p>
-            <p>7) Использование: мониторинг метрик качества/скорости/брака, сценарии автоматизации.</p>
-            <p>8) Обслуживание: обновления моделей/ПО, контроль дрифта, поддержка оборудования.</p>
-          </div>
-        </section>
-
         <section className="grid gap-6 lg:grid-cols-[1.4fr_1fr]" id="products">
           <div className="card border border-[var(--border)] p-6">
             <h2 className="text-2xl font-semibold">Продукты и платформа</h2>
