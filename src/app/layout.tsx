@@ -8,7 +8,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "VT — Industrial IoT",
+  title: {
+    default: "Вельд Техно",
+    template: "%s | Veld Tech.",
+  },
   description:
     "IoT решения для промышленности: мониторинг, аналитика, автоматизация. Локально или в облаке.",
   icons: {
