@@ -1,49 +1,50 @@
 import { ContactReveal } from "@/components/ContactReveal";
-import { Header } from "@/components/Header";
 import { CtaBlock } from "@/components/CtaBlock";
+import { Header } from "@/components/Header";
+import { navItemsEn } from "@/content/navItemsEn";
 
-export default function ContactsPage() {
+export default function ContactsPageEn() {
   return (
     <>
-      <Header />
+      <Header navItems={navItemsEn} ctaPrimaryText="Request a demo" />
       <main className="content-wrap container space-y-12 py-12">
         <section className="space-y-4">
           <p className="text-xs uppercase tracking-[0.18em] text-[var(--accent-b)]">
-            Контакты
+            Contacts
           </p>
-          <h1 className="text-4xl font-semibold leading-tight">Контакты</h1>
+          <h1 className="text-4xl font-semibold leading-tight">Get in touch</h1>
           <p className="text-[var(--text-muted)]">
-            Свяжитесь удобным способом. Контакты доступны по click-to-reveal для
-            защиты от ботов.
+            Reach us in a way that works for you. Email and phone are protected
+            by click-to-reveal to avoid spam.
           </p>
         </section>
 
         <section className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="card border border-[var(--border)] p-5">
-            <h3 className="text-xl font-semibold">Форма</h3>
+            <h3 className="text-xl font-semibold">Contact form</h3>
             <form className="mt-3 space-y-3">
               <label className="block text-sm">
-                <span className="text-[var(--text-muted)]">Имя</span>
+                <span className="text-[var(--text-muted)]">Name</span>
                 <input
                   className="mt-1 w-full rounded-md border border-[var(--border)] bg-[#0f131f] px-3 py-2 text-[var(--text-strong)] outline-none focus:border-[var(--accent-b)]"
                   required
                 />
               </label>
               <label className="block text-sm">
-                <span className="text-[var(--text-muted)]">Email или телефон</span>
+                <span className="text-[var(--text-muted)]">Email or phone</span>
                 <input
                   className="mt-1 w-full rounded-md border border-[var(--border)] bg-[#0f131f] px-3 py-2 text-[var(--text-strong)] outline-none focus:border-[var(--accent-b)]"
                   required
                 />
               </label>
               <label className="block text-sm">
-                <span className="text-[var(--text-muted)]">Компания</span>
+                <span className="text-[var(--text-muted)]">Company</span>
                 <input
                   className="mt-1 w-full rounded-md border border-[var(--border)] bg-[#0f131f] px-3 py-2 text-[var(--text-strong)] outline-none focus:border-[var(--accent-b)]"
                 />
               </label>
               <label className="block text-sm">
-                <span className="text-[var(--text-muted)]">Комментарий</span>
+                <span className="text-[var(--text-muted)]">Message</span>
                 <textarea
                   className="mt-1 w-full rounded-md border border-[var(--border)] bg-[#0f131f] px-3 py-2 text-[var(--text-strong)] outline-none focus:border-[var(--accent-b)]"
                   rows={4}
@@ -51,35 +52,35 @@ export default function ContactsPage() {
               </label>
               <div className="flex flex-wrap gap-3 pt-2">
                 <button type="submit" className="btn btn-primary">
-                  Запросить демо
+                  Request a demo
                 </button>
                 <button type="button" className="btn btn-secondary btn-contact">
-                  Связаться
+                  Contact
                 </button>
               </div>
             </form>
             <p className="mt-3 text-xs text-[var(--text-muted)]">
-              Защита от спама: невидимый фильтр/капча. Соглашение на обработку
-              данных — чекбокс при необходимости.
+              Anti-spam: invisible filter/captcha. Data processing consent can
+              be added via checkbox if needed.
             </p>
           </div>
           <div className="card border border-[var(--border)] p-5 space-y-3">
-            <h3 className="text-xl font-semibold">Контакты (click-to-reveal)</h3>
+            <h3 className="text-xl font-semibold">Direct contacts</h3>
             <ContactReveal
               phone="+375333400000"
               email="info@veld.by"
-              showLabel="Показать email/телефон"
-              hideLabel="Скрыть контакты"
-              hint="Нажмите, чтобы скопировать или перейти: телефоны и почта защищены от ботов."
+              showLabel="Show email/phone"
+              hideLabel="Hide contacts"
+              hint="Click to copy or open the link. Telegram/WhatsApp available via the phone number."
             />
             <div className="text-[var(--text-muted)] space-y-2">
               <p>
-                Пишите или звоните удобным способом. Telegram/WhatsApp доступен
-                по номеру телефона.
+                We reply within 1 business day. Share the industry, site size,
+                and preferred contact method to speed things up.
               </p>
               <p>
-                Адрес и карта — по запросу, без лишнего трекинга. Работаем
-                будние дни, отвечаем в течение 1 рабочего дня.
+                Office address and map are available on request without extra
+                tracking. Support hours: business days.
               </p>
             </div>
             <div className="h-32 rounded-md border border-[var(--border)] bg-[#0f131f]" />
@@ -88,15 +89,13 @@ export default function ContactsPage() {
 
         <CtaBlock
           eyebrow="CTA"
-          title="Связаться или запросить демо"
-          subtitle="Отвечаем в течение 1 рабочего дня. Контакты защищены от ботов."
-          primaryText="Запросить демо"
-          secondaryText="Связаться"
+          title="Start with a 30-day pilot"
+          subtitle="Minimal sensors, clear notifications, secure setup."
+          primaryText="Request a demo"
+          secondaryText="Contact"
         />
       </main>
-      <div className="footer-note">
-        ЧП «Вельд Техно» — промышленный IoT
-      </div>
+      <div className="footer-note">Veld Tech. PE — industrial IoT</div>
     </>
   );
 }
