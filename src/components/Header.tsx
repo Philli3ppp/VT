@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { navItems as defaultNav } from "@/content/navItems";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 type NavItem = { label: string; href: string };
@@ -21,6 +22,15 @@ export function Header({
 }: HeaderProps) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const isEn = pathname?.startsWith("/en");
+  const toggleHref = (() => {
+    if (!pathname) return "/en";
+    if (isEn) {
+      const withoutPrefix = pathname.replace(/^\/en/, "") || "/";
+      return withoutPrefix;
+    }
+    return pathname === "/" ? "/en" : `/en${pathname}`;
+  })();
 
   return (
     <header className="header-blur sticky top-0 z-10">
@@ -51,9 +61,12 @@ export function Header({
         </nav>
         <div className="flex items-center gap-2">
           {langToggle && (
-            <button className="btn btn-header hidden md:inline-flex text-xs md:text-sm">
-              RU / EN
-            </button>
+            <Link
+              className="btn btn-header hidden md:inline-flex text-xs md:text-sm"
+              href={toggleHref}
+            >
+              {isEn ? "EN → RU" : "RU → EN"}
+            </Link>
           )}
           <button className="btn btn-header hidden md:inline-flex">
             {ctaPrimaryText}
@@ -73,7 +86,9 @@ export function Header({
             </a>
           ))}
           {langToggle && (
-            <button className="btn btn-header text-xs w-fit">RU / EN</button>
+            <Link className="btn btn-header text-xs w-fit" href={toggleHref}>
+              {isEn ? "EN → RU" : "RU → EN"}
+            </Link>
           )}
         </div>
       </div>

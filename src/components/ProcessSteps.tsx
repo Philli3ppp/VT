@@ -1,15 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { processSteps } from "@/content/processSteps";
+import { processSteps, type Step } from "@/content/processSteps";
 
-export function ProcessSteps() {
+type ProcessStepsProps = {
+  steps?: Step[];
+};
+
+export function ProcessSteps({ steps = processSteps }: ProcessStepsProps) {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
     <div className="space-y-2">
       <div className="card border border-[var(--border)] bg-[#0f131f] divide-y divide-[var(--border)]">
-        {processSteps.map((step, idx) => {
+        {steps.map((step, idx) => {
           const isOpen = idx === openIndex;
           return (
             <div key={step.title} className="p-4">
