@@ -34,8 +34,12 @@ export default function ProductsPlatformEn() {
             the system/source can be transferred to the customer if required.
           </p>
           <div className="flex flex-wrap gap-3">
-            <button className="btn btn-primary">Request a demo</button>
-            <button className="btn btn-secondary btn-contact">Contact</button>
+            <a className="btn btn-primary" href="/en/contacts">
+              Request a demo
+            </a>
+            <a className="btn btn-secondary btn-contact" href="/en/contacts">
+              Contact
+            </a>
           </div>
         </section>
 
@@ -69,6 +73,8 @@ export default function ProductsPlatformEn() {
           subtitle="We’ll show data capture, dashboards, and automation. On-prem or cloud."
           primaryText="Request a demo"
           secondaryText="Contact"
+          primaryHref="/en/contacts"
+          secondaryHref="/en/contacts"
         />
       </main>
       <div className="footer-note">Veld Tech. PE — industrial IoT</div>

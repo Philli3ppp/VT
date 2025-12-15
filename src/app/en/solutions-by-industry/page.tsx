@@ -145,6 +145,8 @@ export default function SolutionsByIndustryEn() {
           subtitle="We’ll pick a pilot for your site, connect 1–3 zones, and show the effect."
           primaryText="Request a demo"
           secondaryText="Contact"
+          primaryHref="/en/contacts"
+          secondaryHref="/en/contacts"
         />
       </main>
       <div className="footer-note">Veld Tech. PE — industrial IoT</div>

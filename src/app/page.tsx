@@ -28,8 +28,12 @@ export default function Home() {
               Индивидуальные дашборды и интеграции с существующими системами.
             </p>
             <div className="flex flex-wrap gap-3">
-              <button className="btn btn-primary">Запросить демо</button>
-              <button className="btn btn-secondary btn-contact">Связаться</button>
+              <a className="btn btn-primary" href="/contacts">
+                Запросить демо
+              </a>
+              <a className="btn btn-secondary btn-contact" href="/contacts">
+                Связаться
+              </a>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
               <div className="card border border-[var(--border)] p-4">
@@ -91,8 +95,12 @@ export default function Home() {
               <li>• Интеграции: ERP/SCADA/MES, API, OTA с подписью и откатом</li>
             </ul>
             <div className="mt-4 flex flex-wrap gap-3">
-              <button className="btn btn-primary">Запросить демо</button>
-              <button className="btn btn-secondary btn-contact">Связаться</button>
+              <a className="btn btn-primary" href="/contacts">
+                Запросить демо
+              </a>
+              <a className="btn btn-secondary btn-contact" href="/contacts">
+                Связаться
+              </a>
             </div>
           </div>
           <div className="card border border-[var(--border)] p-6">
@@ -116,6 +124,8 @@ export default function Home() {
             subtitle="Минимум датчиков, ясные уведомления, безопасное подключение."
             primaryText="Запросить демо"
             secondaryText="Связаться"
+            primaryHref="/contacts"
+            secondaryHref="/contacts"
           />
         </div>
       </main>

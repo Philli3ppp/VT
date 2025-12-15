@@ -145,6 +145,8 @@ export default function SolutionsByIndustry() {
           subtitle="Подберём пилот под ваш объект, подключим 1–3 зоны, покажем эффект."
           primaryText="Запросить демо"
           secondaryText="Связаться"
+          primaryHref="/contacts"
+          secondaryHref="/contacts"
         />
       </main>
       <div className="footer-note">

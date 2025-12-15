@@ -39,10 +39,12 @@ export default function SimpleSolutions() {
               расширять до полной платформы.
             </p>
             <div className="flex flex-wrap gap-3">
-              <button className="btn btn-primary">Узнать стоимость</button>
-              <button className="btn btn-secondary btn-contact">
+              <a className="btn btn-primary" href="/contacts">
+                Узнать стоимость
+              </a>
+              <a className="btn btn-secondary btn-contact" href="/contacts">
                 Запросить демо
-              </button>
+              </a>
             </div>
           </div>
           <div className="card border border-[var(--border)] p-5">
@@ -95,6 +97,8 @@ export default function SimpleSolutions() {
           subtitle="1–3 датчика, уведомления в Telegram, запуск за 1 день при наличии компонентов."
           primaryText="Узнать стоимость"
           secondaryText="Запросить демо"
+          primaryHref="/contacts"
+          secondaryHref="/contacts"
         />
       </main>
       <div className="footer-note">

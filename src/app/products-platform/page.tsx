@@ -33,8 +33,12 @@ export default function ProductsPlatform() {
             систему/исходники могут переходить заказчику по договорённости.
           </p>
           <div className="flex flex-wrap gap-3">
-            <button className="btn btn-primary">Запросить демо</button>
-            <button className="btn btn-secondary btn-contact">Связаться</button>
+            <a className="btn btn-primary" href="/contacts">
+              Запросить демо
+            </a>
+            <a className="btn btn-secondary btn-contact" href="/contacts">
+              Связаться
+            </a>
           </div>
         </section>
 
@@ -68,6 +72,8 @@ export default function ProductsPlatform() {
           subtitle="Покажем сбор данных, дашборды и автоматизацию. Локальный или облачный режим."
           primaryText="Запросить демо"
           secondaryText="Связаться"
+          primaryHref="/contacts"
+          secondaryHref="/contacts"
         />
       </main>
       <div className="footer-note">

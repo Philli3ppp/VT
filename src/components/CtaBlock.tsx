@@ -4,6 +4,8 @@ type CtaBlockProps = {
   subtitle: string;
   primaryText?: string;
   secondaryText?: string;
+  primaryHref?: string;
+  secondaryHref?: string;
 };
 
 export function CtaBlock({
@@ -12,6 +14,8 @@ export function CtaBlock({
   subtitle,
   primaryText = "Request a demo",
   secondaryText = "Contact",
+  primaryHref = "/contacts",
+  secondaryHref,
 }: CtaBlockProps) {
   return (
     <section className="cta-mask card border border-[var(--border)] bg-[var(--card)] p-6 md:flex md:items-center md:justify-between">
@@ -23,8 +27,15 @@ export function CtaBlock({
         <p className="mt-2 text-[var(--text-muted)]">{subtitle}</p>
       </div>
       <div className="mt-4 flex flex-wrap gap-3 md:mt-0">
-        <button className="btn btn-primary">{primaryText}</button>
-        <button className="btn btn-secondary btn-contact">{secondaryText}</button>
+        <a className="btn btn-primary" href={primaryHref}>
+          {primaryText}
+        </a>
+        <a
+          className="btn btn-secondary btn-contact"
+          href={secondaryHref ?? primaryHref}
+        >
+          {secondaryText}
+        </a>
       </div>
     </section>
   );

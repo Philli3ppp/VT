@@ -29,8 +29,12 @@ export default function HomeEn() {
               cloud. Custom dashboards and integrations with existing systems.
             </p>
             <div className="flex flex-wrap gap-3">
-              <button className="btn btn-primary">Request a demo</button>
-              <button className="btn btn-secondary btn-contact">Contact</button>
+              <a className="btn btn-primary" href="/en/contacts">
+                Request a demo
+              </a>
+              <a className="btn btn-secondary btn-contact" href="/en/contacts">
+                Contact
+              </a>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
               <div className="card border border-[var(--border)] p-4">
@@ -96,8 +100,12 @@ export default function HomeEn() {
               </li>
             </ul>
             <div className="mt-4 flex flex-wrap gap-3">
-              <button className="btn btn-primary">Request a demo</button>
-              <button className="btn btn-secondary btn-contact">Contact</button>
+              <a className="btn btn-primary" href="/en/contacts">
+                Request a demo
+              </a>
+              <a className="btn btn-secondary btn-contact" href="/en/contacts">
+                Contact
+              </a>
             </div>
           </div>
           <div className="card border border-[var(--border)] p-6">
@@ -121,6 +129,8 @@ export default function HomeEn() {
             subtitle="Minimal sensors, clear notifications, secure setup."
             primaryText="Request a demo"
             secondaryText="Contact"
+            primaryHref="/en/contacts"
+            secondaryHref="/en/contacts"
           />
         </div>
       </main>

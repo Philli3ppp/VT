@@ -93,6 +93,8 @@ export default function ContactsPageEn() {
           subtitle="Minimal sensors, clear notifications, secure setup."
           primaryText="Request a demo"
           secondaryText="Contact"
+          primaryHref="/en/contacts"
+          secondaryHref="/en/contacts"
         />
       </main>
       <div className="footer-note">Veld Tech. PE — industrial IoT</div>

@@ -71,6 +71,8 @@ export default function ServicesEn() {
           subtitle="We’ll estimate scope, propose a pilot, and plan full rollout. On-prem or cloud."
           primaryText="Request a plan"
           secondaryText="Estimate project"
+          primaryHref="/en/contacts"
+          secondaryHref="/en/contacts"
         />
       </main>
       <div className="footer-note">Veld Tech. PE — industrial IoT</div>

@@ -40,10 +40,12 @@ export default function SimpleSolutionsEn() {
               platform later.
             </p>
             <div className="flex flex-wrap gap-3">
-              <button className="btn btn-primary">Request pricing</button>
-              <button className="btn btn-secondary btn-contact">
+              <a className="btn btn-primary" href="/en/contacts">
+                Request pricing
+              </a>
+              <a className="btn btn-secondary btn-contact" href="/en/contacts">
                 Request a demo
-              </button>
+              </a>
             </div>
           </div>
           <div className="card border border-[var(--border)] p-5">
@@ -95,6 +97,8 @@ export default function SimpleSolutionsEn() {
           subtitle="1–3 sensors, Telegram alerts, launch in 1 day if components are ready."
           primaryText="Request pricing"
           secondaryText="Request a demo"
+          primaryHref="/en/contacts"
+          secondaryHref="/en/contacts"
         />
       </main>
       <div className="footer-note">Veld Tech. PE — industrial IoT</div>
