@@ -59,8 +59,6 @@ export default function ContactsPage() {
               </div>
             </form>
             <p className="mt-3 text-xs text-[var(--text-muted)]">
-              Защита от спама: невидимый фильтр/капча. Соглашение на обработку
-              данных — чекбокс при необходимости.
             </p>
           </div>
           <div className="card border border-[var(--border)] p-5 space-y-3">

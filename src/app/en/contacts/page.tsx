@@ -60,8 +60,6 @@ export default function ContactsPageEn() {
               </div>
             </form>
             <p className="mt-3 text-xs text-[var(--text-muted)]">
-              Anti-spam: invisible filter/captcha. Data processing consent can
-              be added via checkbox if needed.
             </p>
           </div>
           <div className="card border border-[var(--border)] p-5 space-y-3">
